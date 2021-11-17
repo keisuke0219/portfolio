@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="/your-path-to-fontawesome/css/style.css" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="script.js"></script>
+  
+</script>
+</head>
+<body>
+  <!-- header -->
+    <header id="top">
+    <div class="header-container">
+   
+      <p class="top-title">
+         Keisuke Setta </p>
+      <nav> 
+      <ul class="nav-list">
+       
+  <li>
+   <a href="#about">自己紹介</a>
+  </li>
+        <li>
+          <a href="#service">サービス</a>
+        </li>
+        <li>
+          <a href="#works">作品集</a>
+        </li>
+        <li>
+          <a href="contact.html">お問い合わせ</a>
+        </li>
+      </ul>  
+    </nav>
+    
+  </div>
+    <div class="main-wrapper main-bg">
+      <h1 class="main-title">Live as if you were <br> to die tomorrow.<br> Learn as if you were <br> to live forever.</h1>
+    </div> 
+  </header>
+  <!-- 自己紹介 -->
+  <main>
+    <section id="about" class="about-wrapper">
+      <h2 class="sec-title">自己紹介</h2>
+      <div class="about-contents">
+        <div class="about-img">
+          <img src="img/98D5EE9C-DA86-46A3-B281-AF6E57EC0A7D.PNG" alt="自画像">
+        </div>
+          <p class="text-box">この度は、私のポートフォリオサイトを見てくださりありがとうございます。<br>
+            現在は大学に通いながら、多くの方に関わり、役に立ちたいという思いで、webサイト制作に励んでおります。<br> 元プロ野球選手の父の影響で始めた野球は、10年以上続けており、今でもweb制作と両立して３つの野球チームに参加しています。野球やスポーツ観戦好きの方とお仕事。</p>
+      </div>
+      <div class="btn-wrapper">
+        <a href="about.html">
+         <button>
+          私について
+         </button>
+        </a>
+     
+    </div>
+    </section>
+    <!-- サービス -->
+    <section id="service" class="service-wrapper">
+      <h2 class="sec-title">サービス</h2>
+      <div class="canvas-container">
+      <canvas id="myBarChart"></canvas>
+    </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+      
+  <a class="btn-wrapper">
+      <a href="service.html">
+       <button>
+        サービス一覧
+       </button>
+      </a>
+   
+  </a>
+ </section>
+    <!-- 作品集-->
+    <section id="works" class="works-wrapper">
+      <div class="works-container">
+      <h2 class="sec-title">作品集</h2>
+      <div class="p-wrapper">
+      <p class="works-p">過去作品の一部をご紹介いたします。</p>
+    </div>
+      <div class="works-contents">
+        <div class="works-content">
+      <a href="file:///Users/settakeisuke/Desktop/模写中級１/index.html#">
+        <img src="img/works1.png" alt="サイト１">
+      </a>
+      <p class="works-text">
+        texttexttexttexttexttexttexttext
+        texttexttexttexttexttexttexttext
+        texttexttexttexttexttexttexttext
+        texttexttexttexttexttexttexttext
+        texttexttext</p>
+    </div>
+    <div class="works-content">
+        <p class="works-text">
+      texttexttexttexttexttexttexttext
+      texttexttexttexttexttexttexttext
+      texttexttexttexttexttexttexttext
+      texttexttexttexttexttexttexttext
+      texttexttext
+      </p>
+      <a href="http://localhost:8888/wordpress/">
+        <img src="img/Codeship.png" alt="サイト２">
+      </a>
+   
+    </div>
+    <div class="works-content">
+      <a href="file:///Users/settakeisuke/Desktop/サイト模写２/index.html">
+        <img src="img/colorful-2609978_1280.webp" alt="サイト３">
+      </a>
+      <p class="works-text">
+        texttexttexttexttexttexttexttext
+        texttexttexttexttexttexttexttext
+        texttexttexttexttexttexttexttext
+        texttexttexttexttexttexttexttext
+        texttexttext
+      </p>
+    </div>
+    <div class="works-content">
+      <p class="works-text">
+        texttexttexttexttexttexttexttext
+        texttexttexttexttexttexttexttext
+        texttexttexttexttexttexttexttext
+        texttexttexttexttexttexttexttext
+        texttexttext
+      </p>
+      <a href="file:///Users/settakeisuke/Desktop/模写中級２/index.html ">
+        <img src="img/works2.png " alt="サイト４">
+      </a>
+      
+    </div>
+      </div>
+      </div>
+    </section>
+   
+
+  </main>
+  <!-- footer -->
+  <footer>
+    <div class="footer-container">
+      <p class="top-title">
+         Keisuke Setta </p>
+      <nav> 
+      <ul class="nav-list footer-nav">
+        <li><a href="#top">トップへ</a></li>
+        <li>
+          <a href="contact.html">お問い合わせ</a>
+        </li>
+      </ul>  
+    </nav>
+    
+  </div>
+  </footer>
+
+ 
+</body>
+ <script>
+  var ctx = document.getElementById("myBarChart");
+  var myBarChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['skill'],
+      datasets: [
+        {
+          label: 'HTML&CSS',
+          data: [75,],
+          backgroundColor: "rgba(219,39,91,1)"
+        },{
+          label: 'Jquery',
+          data: [60,],
+          backgroundColor: "rgba(13,20,100,1)"
+        },{
+          label: 'Wordpress',
+          data: [60,],
+          backgroundColor:"rgba(130,200,10,1)"
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: '分野別スキル'
+      },
+      scales: {
+        yAxes: [{
+          ticks: {
+            suggestedMax: 100,
+            suggestedMin: 30,
+            stepSize: 10,
+            callback: function(value, index, values){
+              return  value +  '％'
+            }
+          }
+        }]
+      },
+    }
+  });
+$(function () {
+    var container = $('.canvas-container');
+    var ctx= $('#chart');
+    ctx.attr('width', container.width());
+    ctx.attr('height', 300);
+});
+
+$(function () {
+  var startPos = 0,winScrollTop = 0;
+$(window).on('scroll',function(){
+    winScrollTop = $(this).scrollTop();
+    if (winScrollTop >= startPos) {
+        $('.header-container').addClass('hide');
+    } else {
+        $('.header-container').removeClass('hide');
+    }
+    startPos = winScrollTop;
+});
+});
+
+</script>
+</html>

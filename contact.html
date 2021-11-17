@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="/your-path-to-fontawesome/css/style.css" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="script.js"></script>
+  
+</script>
+</head>
+
+
+<h2 class="sec-title">お問い合わせ</h2>
+<div>
+    <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
+        
+        <div class="contact-container">
+        <p class="contact-title">お問い合わせ 内容入力</p>
+      
+        <div class="contact-form"> 
+            <div>
+                <label>お名前</label>
+                <input type="text" name="name" placeholder="例）山田太郎" value="">
+            </div>
+            <div>
+                <label>メールアドレス<span>必須</span></label>
+                <input type="text" name="email" placeholder="例）keisuke@mail.com" value="">
+            </div>
+            <div>
+                <label>電話番号</label>
+                <input type="text" name="tel" placeholder="例）080-0000-000" value="">
+            </div>
+           
+            <div>
+                <label>お問い合わせ内容</label>
+                <textarea name="content" rows="10" placeholder="お問合せ内容を入力"></textarea>
+            </div>
+            <button type="submit">確認画面へ</button>
+        </div>
+    </form>
+</div>
+</div>
+</html>

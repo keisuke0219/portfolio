@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="/your-path-to-fontawesome/css/style.css" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="script.js"></script>
+  
+</script>
+</head>
+<body>
+  <!-- header -->
+    <header id="top">
+     <div class="header-container">
+      <p class="top-title">
+         Keisuke Setta </p>
+      <nav> 
+      <ul class="nav-list">
+       
+         <li>
+         <a href="index.html">トップページ
+         </a>
+        </li>
+        <li>
+          <a href="contact.html">お問い合わせ</a>
+        </li>
+          </ul>  
+        </nav> 
+      </div>
+  </header>
+  <main>
+    <div class="about-container">
+      <!-- 背景画像 -->
+      <div class="img-wrapper"></div>
+
+      <div class="about-text">
+        <p class="text-content">
+          私の経歴や、人間性についてより詳しくお伝えできればと思います。
+        </p>
+      </div>
+      <div class="about-text">
+        <p class="text-content">
+          現在22歳の大学四年生ですが、実は高校卒業後に１年間浪人生活をしていたので、今年で２３歳になります。 <br>
+          自分は、長年やっている野球や、浪人生活を通して、並大抵のことでは折れることのない根性を持っていると自負しております。
+        </p>
+      </div>
+      <div class="about-text">
+        <p class="text-content">
+          中学時代は1日１２時間以上の練習をする過酷な環境を乗り越え、東海地方の選抜チームにも選ばれました。 <br>
+          高校時代には甲子園を目指しながら、勉強との両立を目指し、中高６年間の間、男子校に通い文武両道を貫いた学生時代を過ごしました。
+        </p>
+      </div>
+      <div class="about-text">
+        <p class="text-content">
+          しかし受験には失敗し、１年間予備校に通い受験勉強に励むも、再度志望校には合格せず、合格していた大学もあったが諦めて専門学校に入学。<br>
+          その２年間で英検準一級、TOEIC800点以上を取るまで英語力も磨き、大学3年生の年に海外の大学に編入を試みるも、コロナで断念せざるを得なくなり、現在の名古屋にある大学に編入することになりました。
+        </p>
+      </div>
+      <div class="about-text">
+        <p class="text-content">
+          大学入学後は大学3年生までは、スターバックスやドトールコーヒーなど様々な飲食店でアルバイトをしたことで、クライアントとの円滑なコミニュケーションや、問題解決能力が身につくなどweb制作をする上でアルバイトの経験が役に立ちました。
+
+        </p>
+      </div>
+      <div class="about-text">
+        <p class="text-content">
+          Web制作に出会ったことで、自分でホームページを制作することの楽しさに魅了されました。より多くの人とweb制作を通じて関わり、お互いにとって良い関係を長く築いて行けたら良いなと思っております。
+
+        </p>
+      </div>
+      <div class="about-text">
+        <p class="text-content">
+          texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext <br>
+          texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext <br>
+          texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
+        </p>
+      </div>
+  </div>
+  </main>
+  </body>
+  <script>
+
+$(function() {
+  var startPos = 0,winScrollTop = 0;
+$(window).on('scroll',function(){
+    winScrollTop = $(this).scrollTop();
+    if (winScrollTop >= startPos) {
+        $('.header-container').addClass('hide');
+    } else {
+        $('.header-container').removeClass('hide');
+    }
+    startPos = winScrollTop;
+});
+});
+  </script>
+  </html>
