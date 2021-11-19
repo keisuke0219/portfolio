@@ -1,8 +1,44 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 html, body {
   overflow-x: hidden;
@@ -180,26 +216,67 @@ font-family: cursive;
   overflow: hidden;
   margin: 20px auto;
 }
-.btn-wrapper {
-  display: flex;
-  justify-content: center;
+.btn-container {
+  text-align: center;
 }
-.btn-wrapper button {
-font-size: 2.5vw;
-padding: 10px;
-color: #fff;
-background-color: #000;
-border-top-left-radius: 50%;
-border-bottom-right-radius: 50%;
+a.btn-flat {
+  overflow: hidden;
+
+  padding: 1.5rem 6rem;
+
+  color: #fff;
+  border-radius: 0;
+  background: #000;
 }
-.btn-wrapper button:hover {
-opacity: 0.7;  
-border-bottom-left-radius: 50%;
-border-top-right-radius: 50%;
-border-top-left-radius: 0;
-border-bottom-right-radius: 0;
-transition: ease 1s;
+
+a.btn-flat span {
+  position: relative;
+  z-index: 1;
 }
+
+a.btn-flat:before {
+  position: absolute;
+  top: 0;
+  left: calc(-100% + 10px);
+
+  width: 100%;
+  height: 100%;
+
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(0) translateY(0);
+  transform: translateX(0) translateY(0);
+  background: #094;
+}
+
+a.btn-flat:after {
+  position: absolute;
+  top: 0;
+  right: calc(-100% + 10px);
+
+  width: 100%;
+  height: 100%;
+
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(0) translateY(0);
+  transform: translateX(0) translateY(0);
+
+  background: #094;
+}
+
+a.btn-flat:hover:before {
+  -webkit-transform: translateX(50%) translateY(0);
+  transform: translateX(50%) translateY(0);
+}
+
+a.btn-flat:hover:after {
+  -webkit-transform: translateX(-50%) translateY(0);
+  transform: translateX(-50%) translateY(0);
+}
+
 /* works */
 
 .works-p {
