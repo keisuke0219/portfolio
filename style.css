@@ -146,15 +146,15 @@ font-family: cursive;
   display: flex;
   width: 100%;
   align-items: center;
-  padding-left: 20%;
+  padding-left: 15%;
 }
 .about-img img{
-  height: 150px;
-  width: 150px;
-  margin-right: 20%;
+  height: 200px;
+  width: 200px;
+  margin-right: 10%;
 }
 .text-box {
-  padding: 70px;
+  padding: 50px;
   min-width: 300px;
 }
 /* about.html */
@@ -208,7 +208,6 @@ font-family: cursive;
 }
 
 /* サービス */
-
 .canvas-container {
   position: relative;
   max-width: 600px;
@@ -275,6 +274,9 @@ a.btn-flat:hover:before {
 a.btn-flat:hover:after {
   -webkit-transform: translateX(-50%) translateY(0);
   transform: translateX(-50%) translateY(0);
+}
+#service .btn-container {
+  margin-bottom: 50px;
 }
 
 /* works */
