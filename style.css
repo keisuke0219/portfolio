@@ -31,7 +31,7 @@ button.btn {
   text-decoration: none;
   letter-spacing: 0.1em;
   color: #212529;
-  border-radius: 0.5rem;
+  border-radius: 50%;
 }
 * {
   margin: 0;
@@ -153,11 +153,22 @@ font-family: cursive;
   width: 200px;
   margin-right: 10%;
 }
+.icon-content img{
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+  
+}
 .text-box {
   padding: 50px;
   min-width: 300px;
 }
 /* about.html */
+.filter {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
 .about-container {
   height: 100%;
   width: 100%;
@@ -190,6 +201,8 @@ font-family: cursive;
 .text-content {
   position: absolute;
   top: 50%;
+  font-size: 30px;
+  letter-spacing: 5px;
   color: #fff;
   width: 80%;
 }
@@ -220,11 +233,9 @@ font-family: cursive;
 }
 a.btn-flat {
   overflow: hidden;
-
   padding: 1.5rem 6rem;
-
   color: #fff;
-  border-radius: 0;
+  border-radius: 50px;
   background: #000;
 }
 
@@ -236,7 +247,7 @@ a.btn-flat span {
 a.btn-flat:before {
   position: absolute;
   top: 0;
-  left: calc(-100% + 10px);
+  left: calc(-100% + 20px);
 
   width: 100%;
   height: 100%;
@@ -246,13 +257,13 @@ a.btn-flat:before {
   transition: all .5s ease-in-out;
   -webkit-transform: translateX(0) translateY(0);
   transform: translateX(0) translateY(0);
-  background: #094;
+  background: rgb(103, 177, 137);
 }
 
 a.btn-flat:after {
   position: absolute;
   top: 0;
-  right: calc(-100% + 10px);
+  right: calc(-100% + 20px);
 
   width: 100%;
   height: 100%;
@@ -263,7 +274,7 @@ a.btn-flat:after {
   -webkit-transform: translateX(0) translateY(0);
   transform: translateX(0) translateY(0);
 
-  background: #094;
+  background: rgb(148, 210, 176);
 }
 
 a.btn-flat:hover:before {
@@ -278,7 +289,34 @@ a.btn-flat:hover:after {
 #service .btn-container {
   margin-bottom: 50px;
 }
-
+/* service.html */
+.service-wrapper {
+  height: 550px;
+  width: 100%;
+}
+.service-content {
+  height: 50%;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+}
+.service-icon {
+  text-align: center;
+}
+.service-icon  img{
+  height: 70px;
+  width: 70px;
+  margin-right: 5%;
+}
+.service-icon p{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+.service-text {
+  width: 40%;
+}
 /* works */
 
 .works-p {
@@ -358,8 +396,12 @@ a.btn-flat:hover:after {
   padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
   color: #494949;/*文字色*/
   background: #f4f4f4;/*背景色*/
-  /* border-left: solid 5px #7db4e6;左線 */
   border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+.works-text p {
+  padding-top: 30%;
+  text-align: left;
+  line-height: 20px;
 }
 
 .works-contents img:hover{
@@ -375,7 +417,6 @@ opacity: 0.7;
 .contact-container {
   width: 80%;
   height: 450px;
-  border: 1px solid #000;
   margin: 0 auto;
   margin-top: 50px;
   text-align: center;
@@ -385,11 +426,19 @@ opacity: 0.7;
   font-size: 30px;
 }
 .contact-form {
-  border: 1px solid #000;
-  height: 300px;
+  height: 400px;
+  text-align: left;
   justify-content: space-around;
   display: inline-block;
-  padding: 30px;
+  padding-top: 30px;
+
+}
+.contact-form button {
+  margin-top: 100px;
+  margin-left: 50%;
+}
+.contact-form .box {
+  margin-left: 20px;
 }
 
 .footer-container {
@@ -404,7 +453,7 @@ opacity: 0.7;
   text-align: center;
   display: block;
 }
-/* confirm.php */
+/* conform.php */
 
 .confirm-box{
   text-align: center;

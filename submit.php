@@ -1,6 +1,6 @@
 <?php
 
-$to = "mail@test.test";
+$to = "nakou9139@icloud.com";
 $subject = "お問合せがありました";
 
 $name = $_POST["name"];
